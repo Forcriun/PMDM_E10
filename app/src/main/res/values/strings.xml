@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PulsarBotones_E10</string>
+    <string name="contador">0</string>
+    <string name="toggleOFF">APAGADO</string>
+    <string name="toggleON">ENCENDIDO</string>
+    <string name="botonReset">RESET</string>
+    <string name="botonSuma">+</string>
+    <string name="botonResta">-</string>
+</resources>

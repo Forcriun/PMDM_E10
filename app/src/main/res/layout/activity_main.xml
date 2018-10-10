@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/contador"
+        android:textColor="@color/colorContador"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="@color/colorPrimarioBotones"
+        android:checked="false"
+        android:textOff="@string/toggleOFF"
+        android:textOn="@string/toggleON"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textContador"
+        app:layout_constraintStart_toStartOf="@+id/textContador"
+        app:layout_constraintTop_toBottomOf="@+id/textContador" />
+
+    <Button
+        android:id="@+id/botonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/botonReset"
+        app:layout_constraintEnd_toEndOf="@+id/toggleBotones"
+        app:layout_constraintStart_toStartOf="@+id/toggleBotones"
+        app:layout_constraintTop_toBottomOf="@+id/toggleBotones"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/botonSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/botonSuma"
+        app:layout_constraintBottom_toBottomOf="@+id/botonReset"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset"
+        app:layout_constraintTop_toTopOf="@+id/botonReset"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/botonResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/botonResta"
+        app:layout_constraintBottom_toBottomOf="@+id/botonReset"
+        app:layout_constraintStart_toEndOf="@+id/botonReset"
+        app:layout_constraintTop_toTopOf="@+id/botonReset"
+        android:enabled="false"/>
+</android.support.constraint.ConstraintLayout>
